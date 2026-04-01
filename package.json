@@ -1,0 +1,54 @@
+{
+  "name": "test",
+  "version": "0.1.0",
+  "private": true,
+  "reactSnap": {
+    "include": [
+      "/",
+      "/lakes",
+      "/lake/superior",
+      "/lake/tahoe",
+      "/lake/pontchartrain"
+    ],
+    "inlineCss": true,
+    "minifyHtml": true
+  },
+  "dependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.1",
+    "@testing-library/user-event": "^13.5.0",
+    "louder": "file:./louder",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-helmet-async": "^2.0.5",
+    "react-scripts": "^0.0.0",
+    "react-snap": "^1.13.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "npx react-scripts start",
+    "build": "npx react-scripts build",
+    "postbuild": "npx react-snap",
+    "test": "npx react-scripts test",
+    "eject": "npx react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
